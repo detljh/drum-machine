@@ -1,0 +1,30 @@
+[
+    {
+        "url": "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Toms/35[kb]hitom.aif.mp3",
+        "name": "Tom1"
+    }, {
+        "url": "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Toms/40[kb]lotom.aif.mp3",
+        "name": "Tom2"
+    }, {
+        "url": "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Western%20and%20Latin%20Percussion/7[kb]hicow.aif.mp3",
+        "name": "Cowbell"
+    }, {
+        "url": "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Cymbals/78[kb]opencym.aif.mp3",
+        "name": "Cymbal"
+    }, {
+        "url": "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Hats/27[kb]909-bright-ohh.aif.mp3",
+        "name": "Open HH"
+    }, {
+        "url": "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Hats/10[kb]brightchh.aif.mp3",
+        "name": "Closed HH"
+    }, {
+        "url": "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Snares/28[kb]ec-sn027.wav.mp3",
+        "name": "Snare"
+    }, {
+        "url": "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Kicks/53[kb]bunchakiks32.wav.mp3",
+        "name": "Kick"
+    }, {
+        "url": "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Claps/36[kb]c2.aif.mp3",
+        "name": "Clap"
+    }
+]
