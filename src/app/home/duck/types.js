@@ -1,5 +1,5 @@
-const DRUM_PRESS = 'DRUM_PRESS';
+const UPDATE_DISPLAY = 'UPDATE_DISPLAY';
 
 export default {
-    DRUM_PRESS
+    UPDATE_DISPLAY
 };

@@ -1,16 +1,16 @@
 import types from './types.js';
 
 
-const data = require('./audio.json');
+const data = require('../audio.json');
 const INITIAL_STATE = {
-    audio_data: data
+    audioData: data
 };
 
 const homeReducer = (state=INITIAL_STATE, action) => {
     switch (action.type) {
-        case types.DRUM_PRESS:
+        case types.UPDATE_DISPLAY:
             return Object.assign({}, state, {
-                audio_object: action.audio
+                currentDisplay: action.currentDisplay
             })
         default:       
             return state;

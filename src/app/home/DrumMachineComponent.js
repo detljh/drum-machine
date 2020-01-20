@@ -1,23 +1,23 @@
 import React from 'react';
-import DrumPad from './DrumPadComponent';
+import DrumPad from './DrumPadContainer';
 import './drum-machine.scss';
 
 const DrumMachineComponent = (props) => {
     return (
         <div id="drum-machine">
             <div id="drum-pads">
-                <DrumPad keyButton='Q' onClick={props.handleClick}/>
-                <DrumPad keyButton='W'/>
-                <DrumPad keyButton='E'/>
-                <DrumPad keyButton='A'/>
-                <DrumPad keyButton='S'/>
-                <DrumPad keyButton='D'/>                    
-                <DrumPad keyButton='Z'/>
-                <DrumPad keyButton='X'/>
-                <DrumPad keyButton='C'/>   
+                {
+                    props.audioData.map((e, index) => {
+                        return (
+                            <DrumPad key={index} keyButton={e.keyButton} audio={e.url} keyCode={e.keyCode} 
+                                name={e.name} /> 
+                        );
+                    })
+                }
+                
             </div>
             <div id="display">
-                audio name
+                {props.currentDisplay}
             </div>
         </div>
     );

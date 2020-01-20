@@ -1,12 +1,12 @@
 import types from './types.js';
 
-const handleClick = (audio) => {
+const updateDisplay = (name) => {
     return {
-        type: types.DRUM_PRESS,
-        audio: audio
+        type: types.UPDATE_DISPLAY,
+        currentDisplay: name
     }
 }
 
 export default { 
-    handleClick
+    updateDisplay
 };
