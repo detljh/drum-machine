@@ -9,12 +9,14 @@
     margin: 20px auto;
     padding: 10px;
     font-family: 'Orbitron';
-    border: 2px solid black;
-    box-shadow: 0 0 3px 3px;
+    border: 1px solid black;
+    box-shadow:
+        inset 0 0 2px 4px hsl(0, 0%, 10%), 
+        inset 0 0 0 8px gray;
     border-radius: 10px;
     font-size: 14px;
 
-    @media (max-height: 500px) and (max-width: 500px) {
+    @media (max-height: 600px) and (max-width: 600px) {
         font-size: 8px;
     }
 }
@@ -47,6 +49,11 @@
         align-items: center;
         justify-content: space-around;
         color: white;
+        font-size: 1em;
+
+        @media (max-width: 600px) {
+            font-size: 0.9em;
+        }
     }
 
     #display {
@@ -54,12 +61,16 @@
         width: 70%;
         height: 50%;
         display: flex;
-        margin-top: 2%;
+        margin-top: 3%;
         box-shadow: 0 0 5px 5px hsl(0, 0%, 20%);
         
         #audio-name {
-            color: hsl(0, 0%, 20%);     
+            color: hsl(0, 0%, 10%);     
             margin: auto;    
+
+            @media (max-height: 600px) and (max-width: 600px) {
+                font-size: 0.7em;
+            }
         }
     }
 }
