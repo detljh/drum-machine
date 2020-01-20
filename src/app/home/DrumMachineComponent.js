@@ -1,6 +1,9 @@
 import React from 'react';
 import DrumPad from './DrumPadContainer';
 import './drum-machine.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDrum } from '@fortawesome/free-solid-svg-icons';
+
 
 const DrumMachineComponent = (props) => {
     return (
@@ -16,9 +19,15 @@ const DrumMachineComponent = (props) => {
                 }
                 
             </div>
-            <div id="display">
-                {props.currentDisplay}
-            </div>
+            <div id="display-box">
+                <div id="logo">
+                    <FontAwesomeIcon icon={faDrum} />
+                    Drum Machine
+                </div>
+                <div id="display">
+                    <p id="audio-name">{props.currentDisplay}</p>
+                </div>
+            </div> 
         </div>
     );
 }

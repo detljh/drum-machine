@@ -11,7 +11,12 @@ const homeReducer = (state=INITIAL_STATE, action) => {
         case types.UPDATE_DISPLAY:
             return Object.assign({}, state, {
                 currentDisplay: action.currentDisplay
-            })
+            });
+        case types.UPDATE_PAD_STYLE:
+            return Object.assign({}, state, {
+                padStyle: action.padStyle,
+                activePad: action.activePad
+            });
         default:       
             return state;
     };

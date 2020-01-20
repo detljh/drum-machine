@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 
 #drum-machine {
-    background-color: black;
+    background-color: hsl(0, 0%, 5%);
     display: flex;
-    flex-direction: row;
-    height: 60vh;
-    width: 50vw;
-    margin: 50px auto;
+    flex-direction: column-reverse;
+    height: 90vh;
+    width: 60vw;
+    margin: 20px auto;
     padding: 10px;
     font-family: 'Orbitron';
-    border-radius: 20px;
-    border: 5px solid gray;
-    box-shadow: 0 0 10px 5px;
+    border: 2px solid black;
+    box-shadow: 0 0 3px 3px;
+    border-radius: 10px;
     font-size: 14px;
 
     @media (max-height: 500px) and (max-width: 500px) {
@@ -20,19 +20,46 @@
 }
 
 #drum-pads {
-    background-color: gray;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto; 
-    width: 50%;
-    height: 90%;
+    width: 90%;
+    height: 75%;
     margin: auto;
     padding: 5px;
 }
 
-#display {
-    background-color: red;
-    width: 50%;
-    height: 90%;
+#display-box {
+    border: 1px solid gray;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 20%;
     margin: auto;
+    border-radius: 10px;
+
+    #logo {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+    }
+
+    #display {
+        background-color: hsl(120, 48%, 35%);
+        width: 70%;
+        height: 50%;
+        display: flex;
+        margin-top: 2%;
+        box-shadow: 0 0 5px 5px hsl(0, 0%, 20%);
+        
+        #audio-name {
+            color: hsl(0, 0%, 20%);     
+            margin: auto;    
+        }
+    }
 }

@@ -9,14 +9,13 @@ class DrumPadComponent extends React.Component {
 
     componentDidMount() {
         document.addEventListener('keydown', this.handleKeyDown);
-     }
+    }
    
-     componentWillUnmount() {
+    componentWillUnmount() {
         document.removeEventListener('keydown', this.handleKeyDown);
-     }
+    }
 
     handleKeyDown(event) {
-        console.log(event);
         if (event.keyCode === this.props.keyCode) {
             this.play();
         }
@@ -24,14 +23,16 @@ class DrumPadComponent extends React.Component {
 
     play() {
         this.props.updateDisplay(this.props.name);
+        this.props.updatePadStyle(this.props.keyButton);
         const audio = new Audio(this.props.audio);
         audio.play();
     }
 
     render() {
         return (
-            <div className="drum-pad" onClick={this.play.bind(this)} >
-                <audio src={this.props.audio} className="clip" id={this.props.keyButton} />
+            <div className="drum-pad" onClick={this.play.bind(this)} 
+            id={(this.props.activePad === this.props.keyButton) ? this.props.padStyle : this.props.keyButton}>
+                <audio src={this.props.audio} className="clip" />
                 {this.props.keyButton}
             </div>
         );

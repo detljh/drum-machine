@@ -1,11 +1,16 @@
 import Creators from './actions.js';
 
-const updateDisplay = (name) => {
-    return (dispatch) => {
-        dispatch(Creators.updateDisplay(name));
+const updateDisplay = Creators.updateDisplay;
+const updatePadStyle = (keyButton) => {
+    return (dispatch, getState) => {
+        dispatch(Creators.updatePadStyle(keyButton + '-active', keyButton));
+        setTimeout(() => {
+            dispatch(Creators.updatePadStyle(keyButton));
+        }, 100)
     }
 }
 
 export default {
-    updateDisplay
+    updateDisplay,
+    updatePadStyle
 };
